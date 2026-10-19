@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytm-tui"
+version = "1.0.0"
+description = "Reproductor y descargador de música de YouTube para la terminal (mpv + Textual)"
+requires-python = ">=3.10"
+dependencies = ["textual>=0.80", "python-mpv>=1.0.5", "yt-dlp>=2025.1.1", "mutagen>=1.47", "numpy>=1.24", "pillow>=10", "textual-image>=0.8"]
+
+[project.optional-dependencies]
+media-keys = ["pynput>=1.7"]
+discord = ["pypresence>=4.3"]
+dev = ["pytest>=8", "pynput>=1.7", "pypresence>=4.3"]
+
+[project.scripts]
+ytm = "ytm.__main__:main"
+
+[tool.setuptools]
+packages = ["ytm"]

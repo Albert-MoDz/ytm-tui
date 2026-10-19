@@ -1,0 +1,7 @@
+textual>=0.80
+python-mpv>=1.0.5
+yt-dlp>=2025.1.1
+mutagen>=1.47        # etiquetas correctas en las descargas y portadas locales
+numpy>=1.24          # visualizador de espectro
+pillow>=10           # portadas
+textual-image>=0.8   # portadas como imagen real (kitty, WezTerm, iTerm2, foot...)

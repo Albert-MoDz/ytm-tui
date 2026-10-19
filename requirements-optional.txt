@@ -1,0 +1,3 @@
+pynput>=1.7       # teclas multimedia globales (Windows, macOS, Linux/X11)
+pypresence>=4.3   # estado en Discord
+pytest>=8         # para ejecutar los tests
